@@ -12,7 +12,7 @@ rl.prompt();
 
 rl.on('line', (answer) => {
     console.log(`Thank you for your valuable feedback: ${answer}`);
-    writable.write(answer);
+    writable.write(`${answer}\n`);
     rl.prompt();
 });
 
